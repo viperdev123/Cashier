@@ -7,6 +7,7 @@ import Sum from "./Summary/sum.jsx";
 import Tea from "./Tea/Tea.jsx";
 import { BrowserRouter } from "react-router-dom";
 import App from "./receiveOrder/App.jsx";
+import Dessert from "./Dessert/Dessert.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -26,6 +27,13 @@ createRoot(document.getElementById("root")).render(
           <>
             <Head />
             <Tea />
+            <Sum />
+          </>
+        } />
+      <Route path="/dessert" element={
+          <>
+            <Head />
+            <Dessert />
             <Sum />
           </>
         } />

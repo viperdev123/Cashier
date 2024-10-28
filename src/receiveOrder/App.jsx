@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import P1FloatLeft from "./P1FloatLeft";
 import P1FloatRight from "./P1FloatRight";
-import { teas, drinks } from "./data/product";
+import { teas, drinks ,desserts } from "./data/product";
 import { Link } from "react-router-dom";
 import cir1 from "../assets/cir.png";
 import cir2 from "../assets/cir2.png";
@@ -59,7 +59,7 @@ function App() {
           </button>
           <button
             className="type-dessert"
-            onClick={() => handleTypeOfProduct()}
+            onClick={() => handleTypeOfProduct(desserts)}
           >
             <h2 className="h2">DESSERT</h2>
             <img
@@ -75,7 +75,12 @@ function App() {
       </header>
       <div className="grid-float">
         <P1FloatLeft productType={productType} addToCart={addToCart} />
-        <P1FloatRight cart={cart} setCart={setCart} addToCart={addToCart} />
+        <P1FloatRight 
+          cart={cart} 
+          setCart={setCart} 
+          addToCart={addToCart} 
+          productType={productType} // Pass productType as a prop
+        />
       </div>
     </div>
   );

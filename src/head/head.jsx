@@ -43,7 +43,7 @@ function headder() {
             </Link>
           </div>
           <div className="btn-menu" style={{ background: "#f5cac3" }}>
-            <Link to="" className="link-menu">
+            <Link to="/dessert" className="link-menu">
               <p className="text-menu">DESSERT</p>
               <img className="menu-img" src={dessert} alt="" />
             </Link>

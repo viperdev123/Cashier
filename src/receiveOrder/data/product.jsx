@@ -74,4 +74,21 @@ const drinks = [
   },
 ];
 
-export { teas, drinks };
+const desserts = [
+  {
+    img: "src/assets/banoffee.png",
+    name: "banoffee",
+    plice: 35,
+    plus: "+",
+    type: "dessert",
+  },
+  {
+    img: "src/assets/dubai.png",
+    name: "chocolate dubai",
+    plice: 20,
+    plus: "+",
+    type: "dessert",
+  },
+];
+
+export { teas, drinks ,desserts};

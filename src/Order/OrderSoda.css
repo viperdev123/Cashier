@@ -1,0 +1,183 @@
+.container-order {
+    width: 100%;
+    height: calc(60vh - 15px);
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    overflow: scroll;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p-ordername {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-dropdown {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px #00000040;
+    position: relative; /* Add this for absolute positioning of details-content */
+}
+
+.wrap-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.order-total {
+    display: flex;
+    gap: 12px;
+}
+
+.process {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    -webkit-appearance: none;
+    /* Remove default arrow in WebKit browsers */
+    -moz-appearance: none;
+    /* Remove default arrow in Firefox */
+    color: white;
+
+}
+
+.process.not-started {
+    background-color: #A4A4A4;
+    /* Color for Not Started */
+}
+
+.process.in-progress {
+    background-color: #4A618A;
+    /* Color for In Progress */
+}
+
+.process.done {
+    background-color: #4A8A7A;
+    /* Color for Done */
+}
+
+.process:focus {
+    background-color: white;
+    color: #000000;
+}
+
+.delete-order {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.img-delete {
+    width: 30px;
+    height: auto;
+}
+
+.detail {
+    border: none;
+    background-color: transparent;
+}
+
+.detail-img {
+    width: 30px;
+
+}
+
+.details-content {
+    width: 90%; 
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    z-index: 10;
+    display: block;
+}
+
+.details-content.show {
+    min-height: fit-content;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set 2 equal-width columns */
+    grid-auto-rows: auto; /* Let rows adjust based on content */
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.order-detail-content{
+    width: fit-content;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 45px;
+}
+
+.container-image-menu{
+    background: #F78684;
+    border-radius: 10px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-menu{
+    width: 50px;
+    height: auto;
+}
+
+.wrap-name-price{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-menu , .price-menu ,.currency{
+    margin: 0;
+    padding: 0;
+}
+.price-menu{
+    color: #02A47D;
+    display: flex;
+
+}
+
+.currency{
+    color: black;
+}
+.wrap-price-curr ,.wrap-amount{
+    display: flex;
+    gap: 10px;
+}
+
+.amount{
+    color: #F58583;
+}
+
+.pieces{
+    color: #7D7D7D;
+
+}
+
+.name-menu ,.price-menu,.currency{
+    font-size: 15px;
+}
+

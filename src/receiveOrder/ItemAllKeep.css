@@ -1,0 +1,72 @@
+.itemallkeep{
+    position: relative;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+}
+.itemallkeep img{
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.wrap-img-keep{
+    position: relative;
+    background: #F78684;
+    border-radius: 10px;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-all-bill2{
+    width: calc(50% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap-price-cur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    gap: 5px;   
+}
+
+
+.name-all-bill3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name-all-bill3 .delete{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.name-all-bill3 .number{
+    margin: 0 10px 10px;
+}
+
+.name-all-bill3 .plus{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+

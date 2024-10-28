@@ -1,0 +1,101 @@
+ .f2 {
+     position: relative;
+     font-family: Unbounded;
+     font-size: 24px;
+     font-weight: 350;
+     color: #000000;
+     left: 20px;
+ }
+
+ .f1 {
+     font-family: Unbounded;
+     font-size: 24px;
+     font-weight: 400;
+     color: #3d405b;
+     margin-right: 10px;
+
+ }
+
+ .box-float-right {
+     position: relative;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 3.5px 3px #8e8f93;
+     border-radius: 5px;
+
+ }
+
+ .box-all-keep {
+     background-color: #b3b5c8;
+ }
+
+ .box-all-keep-bill {
+     overflow-y: scroll;
+     display: flex;
+     flex-direction: column;
+     height: 480px;
+     margin: 10px 10px;
+     scrollbar-width: none;
+ }
+
+ .box-float-right .h4 {
+     position: relative;
+     left: 20px;
+     font-family: Unbounded;
+     font-size: 16px;
+     font-weight: 400;
+     color: #3d405b;
+ }
+
+ .box-float-right .keep-name {
+     position: relative;
+     background-color: #dfdfdf;
+     padding: 10px;
+     margin-top: 5px;
+     margin-bottom: 8px;
+     width: 400px;
+     left: 25px;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0px 1px 1px #c0c3cf;
+
+ }
+
+
+
+ .box-float-right .keep-name .f4#a {
+     left: -80px;
+     color: #3d405b;
+ }
+
+ .f6 {
+     position: relative;
+     margin-left: 30px;
+     font-family: Unbounded;
+     font-size: 16px;
+     font-weight: 400;
+     color: #3d405b;
+ }
+
+ .box-float-right .f5#a {
+     position: relative;
+     margin-left: 220px;
+ }
+
+ .box-float-right .f4#a {
+     position: relative;
+     margin-left: 10px;
+ }
+
+ .orderNow {
+     position: absolute;
+     display: inline;
+     bottom: 0.4%;
+     left: 50%;
+     transform: translate(-50%, -15%);
+     text-wrap: nowrap;
+     font-family: Unbounded;
+     color: aliceblue;
+     background-color: #F28482;
+     padding: 20px 170px;
+     border-radius: 5px;
+ }

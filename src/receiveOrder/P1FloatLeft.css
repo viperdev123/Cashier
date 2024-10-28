@@ -1,0 +1,16 @@
+.float-left-box{
+position: relative;
+box-sizing: border-box;
+overflow-y: scroll;
+scrollbar-width: none;
+}
+
+
+.grid-left-box{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+

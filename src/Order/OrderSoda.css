@@ -101,24 +101,21 @@
 
 .details-content {
     width: 90%; 
-    max-height: 0;
-    overflow: hidden;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px; 
     z-index: 10;
     display: block;
-}
-
-.details-content.show {
+    padding: 15px;
     min-height: fit-content;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Set 2 equal-width columns */
-    grid-auto-rows: auto; /* Let rows adjust based on content */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     gap: 15px;
     margin-bottom: 15px;
 }
+
 .order-detail-content{
     width: fit-content;
     padding: 15px;
@@ -179,5 +176,22 @@
 
 .name-menu ,.price-menu,.currency{
     font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .details-content {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .order-detail-content {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container-image-menu {
+        width: 90px;
+        height: 90px;
+    }
 }
 

@@ -126,8 +126,8 @@ function Order() {
             <div className={`details-content show`}>
               {orderDetails
                 .filter((detail) => detail[1] === order[0]) // Filter details by OrderId
-                .map((detail) => (
-                  <div className="order-detail-content" key={detail[0]}>
+                .map((detail, index) => (
+                  <div className="order-detail-content" key={`${order[0]}-${detail[0]}-${index}`}>
                     <div className="container-image-menu">
                       <img
                         className="image-menu"

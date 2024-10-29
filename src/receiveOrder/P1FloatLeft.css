@@ -1,16 +1,17 @@
-.float-left-box{
-position: relative;
-box-sizing: border-box;
-overflow-y: scroll;
-scrollbar-width: none;
+.float-left-box {
+    position: relative;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+    width: 100%;
 }
 
-
-.grid-left-box{ 
+.grid-left-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
 }
-
-

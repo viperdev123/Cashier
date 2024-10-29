@@ -167,9 +167,12 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
 
   const handleOrderNow = async () => {
     if (cart.length === 0) {
-      console.log("Cannot place order: cart is empty.");
+      alert("Cannot place order: cart is empty.");
       return;
     }
+
+    // Show "Please wait" alert
+    alert("Please wait while processing your order...");
 
     const orderWithCustomer = {
       items: cart.map((item) => ({ ...item, customer: orderName })),
@@ -181,8 +184,11 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
       await sendOrderDetails(cart, currentOrder); // Send order details
       setCart([]);
       setOrderName("");
+      // Show success alert
+      alert("Order saved successfully!");
     } catch (error) {
       console.error("Error placing order:", error);
+      alert("Error saving order. Please try again.");
     }
   };
 

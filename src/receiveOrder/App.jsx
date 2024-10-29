@@ -39,7 +39,7 @@ function App() {
         </div>
         <div className="grid-type">
           <button className="type-tea" onClick={() => handleTypeOfProduct(teas)} style={{ background: "#FFEF92" }} >
-            <h2 className="h2">TEA</h2>
+            <div className="h2">TEA</div>
             <img className="img-type-tea" src="/images/img-type-tea.png"></img>
           </button>
           <button className="type-drink" onClick={() => handleTypeOfProduct(drinks)} style={{ background: "#b6d7cf" }}>

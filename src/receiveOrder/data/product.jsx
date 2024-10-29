@@ -1,34 +1,54 @@
+import MatchaCocoa from "../../assets/MatchaCocoa.png";
+import Matchalatte from "../../assets/Matchalatte.png";
+import thaiTeaImg from "../../assets/thaitea.png";
+import thaiCocoaImg from "../../assets/thaicocoa.png";
+import darkCocoaImg from "../../assets/DarkCocoa.png";
+import fruitSaladImg from "../../assets/fruitsalad.png";
+import strawberryPineappleImg from "../../assets/strawberrypineapple.png";
+import blueHawaiiGreenAppleImg from "../../assets/Bluehawaiigreenapple.png";
+import blueHawaiiStrawberryImg from "../../assets/bluehawaiistrawberry.png";
+import colaImg from "../../assets/cola.png";
+import blueHawaiiPineappleStrawberryImg from "../../assets/BluehawaiiPineapplestarwberry.png";
+import lycheeImg from "../../assets/lychee.png";
+import strawberryImg from "../../assets/strawberry.png";
+import greenAppleImg from "../../assets/greenapple.png";
+import blueHawaiiImg from "../../assets/bluehawaii.png";
+import pineappleImg from "../../assets/pineapple.png";
+import refillImg from "../../assets/refill.png";
+import banoffeeImg from "../../assets/banoffee.png";
+import dubaiImg from "../../assets/dubai.png";
+
 const teas = [
   {
-    img: "src/assets/MatchaCocoa.png",
+    img: MatchaCocoa,
     name: "มรกตต้องมนต์ในเงาดำ",
     plice: 45,
     plus: "+",
     type: "tea",
   },
   {
-    img: "src/assets/Matchalatte.png",
+    img: Matchalatte,
     name: "มัจฉะอเวจี",
     plice: 45,
     plus: "+",
     type: "tea",
   },
   {
-    img: "src/assets/thaitea.png",
+    img: thaiTeaImg,
     name: "สบงทรงพลัง",
     plice: 30,
     plus: "+",
     type: "tea",
   },
   {
-    img: "src/assets/thaicocoa.png",
+    img: thaiCocoaImg,
     name: "ดาร์คโกโก้รัตติกาล",
     plice: 30,
     plus: "+",
     type: "tea",
   },
   {
-    img: "src/assets/DarkCocoa.png",
+    img: darkCocoaImg,
     name: "เงาทรายแดงในคืนมืด",
     plice: 30,
     plus: "+",
@@ -38,84 +58,84 @@ const teas = [
 
 const drinks = [
   {
-    img: "src/assets/fruitsalad.png",
+    img: fruitSaladImg,
     name: "fruitsalad",
     plice: 6,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/strawberrypineapple.png",
+    img: strawberryPineappleImg,
     name: "ตื่นธรรม",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/Bluehawaiigreenapple.png",
+    img: blueHawaiiGreenAppleImg,
     name: "4หัวใจแห่งขุนเขา",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/bluehawaiistrawberry.png",
+    img: blueHawaiiStrawberryImg,
     name: "ซอมบี้มรกต",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/cola.png",
+    img: colaImg,
     name: "ดินเจ็ดป่าช้า",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/BluehawaiiPineapplestarwberry.png",
+    img: blueHawaiiPineappleStrawberryImg,
     name: "วายุภัคมนตรา",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/lychee.png",
+    img: lycheeImg,
     name: "ลิ้นจี่",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/strawberry.png",
+    img: strawberryImg,
     name: "strawberry",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/greenapple.png",
+    img: greenAppleImg,
     name: "greenapple",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/bluehawaii.png",
+    img: blueHawaiiImg,
     name: "bluehawaii",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/pineapple.png",
+    img: pineappleImg,
     name: "pineapple",
     plice: 29,
     plus: "+",
     type: "soda",
   },
   {
-    img: "src/assets/refill.png",
+    img: refillImg,
     name: "refill",
     plice: 20,
     plus: "+",
@@ -125,14 +145,14 @@ const drinks = [
 
 const desserts = [
   {
-    img: "src/assets/banoffee.png",
+    img: banoffeeImg,
     name: "banoffee",
     plice: 35,
     plus: "+",
     type: "dessert",
   },
   {
-    img: "src/assets/dubai.png",
+    img: dubaiImg,
     name: "chocolate dubai",
     plice: 20,
     plus: "+",
@@ -140,4 +160,4 @@ const desserts = [
   },
 ];
 
-export { teas, drinks ,desserts};
+export { teas, drinks, desserts };

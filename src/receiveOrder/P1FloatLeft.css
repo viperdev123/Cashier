@@ -2,13 +2,13 @@
     position: relative;
     box-sizing: border-box;
     overflow-y: auto;
-    height: calc(100vh - 200px);
+    height: 100%;
     width: 100%;
 }
 
 .grid-left-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 15px;
     padding: 10px;

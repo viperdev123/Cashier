@@ -96,7 +96,7 @@ function Order() {
               <div className="dropdown-p">Total:</div>
               <div className="total">{order[2]} THB</div> {/* Total Price */}
             </div>
-            <select
+            {/* <select
               className={`process ${status}`}
               value={status}
               onChange={handleChange}
@@ -107,7 +107,7 @@ function Order() {
             </select>
             <button className="delete-order">
               <img className="img-delete" src={Delete} alt="Delete" />
-            </button>
+            </button> */}
             <button className="detail" onClick={() => toggleDetails(order[0])}>
               <img className="detail-img" src={expand} alt="Expand" />
             </button>

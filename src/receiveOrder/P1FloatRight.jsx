@@ -126,11 +126,11 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
     for (const [type, items] of Object.entries(groupedItems)) {
       for (const item of items) {
         // Use the fetched latestDetailIDs as the base, defaulting to 0 if not found
-        currentDetailIDs[type] = (currentDetailIDs[type] || 0) + 1;
-        console.log("Current DetailID for", type, ":", currentDetailIDs[type]);
+        // currentDetailIDs[type] = (currentDetailIDs[type] || 0) + 1;
+        // console.log("Current DetailID for", type, ":", currentDetailIDs[type]);
         
         const detailData = {
-          DetailId: currentDetailIDs[type],
+          DetailId: 1,
           OrderId: orderID,
           ProductName: item.name,
           Quantity: 1, // Since each item is individual in the cart

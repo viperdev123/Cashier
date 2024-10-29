@@ -7,6 +7,13 @@ import bluehawaii_strawberry from "../assets/bluehawaiistrawberry.png";
 import strawberry_pineapple from "../assets/strawberrypineapple.png";
 import cola from "../assets/cola.png";
 import bluehawaii_greenapple from "../assets/Bluehawaiigreenapple.png";
+import bluehawaii from "../assets/bluehawaii.png";
+import greenapple from "../assets/greenapple.png";
+import strawberry from "../assets/strawberry.png";
+import litchee from "../assets/lychee.png";
+import fruitsalad from "../assets/fruitsalad.png"
+import pineapple from "../assets/pineapple.png"
+import refill from "../assets/refill.png"
 
 // Mapping of soda names to their image URLs
 const sodaImages = {
@@ -15,6 +22,13 @@ const sodaImages = {
   "วายุภัคมนตรา": bluehawaii_strawberry,
   "4หัวใจแห่งขุนเขา": Bluehawaii_Pineapple_starwberry,
   "ซอมบี้มรกต": bluehawaii_greenapple,
+  "ลิ้นจี่": litchee,
+  "strawberry": strawberry,
+  "greenapple": greenapple,
+  "bluehawaii": bluehawaii,
+  "fruitsalad" : fruitsalad,
+  "pineapple" : pineapple,
+  "refill" : refill,
   // Add more mappings as needed
 };
 
@@ -103,7 +117,7 @@ function Order() {
               <div className="dropdown-p">Total:</div>
               <div className="total">{order[2]} THB</div> {/* Total Price */}
             </div>
-            <select
+            {/* <select
               className={`process ${status}`}
               value={status}
               onChange={handleChange}
@@ -111,10 +125,10 @@ function Order() {
               <option value="not-started">Not Started</option>
               <option value="in-progress">In Progress</option>
               <option value="done">Done</option>
-            </select>
-            <button className="delete-order">
+            </select> */}
+            {/* <button className="delete-order">
               <img className="img-delete" src={Delete} alt="Delete" />
-            </button>
+            </button> */}
             <button className="detail" onClick={() => toggleDetails(order[0])}>
               <img className="detail-img" src={expand} alt="Expand" />
             </button>

@@ -23,6 +23,8 @@
   display: flex;
   width: 100%;
   height: calc(100% - 150px);
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .wrap-product-name-price{

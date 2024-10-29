@@ -38,6 +38,13 @@ const teas = [
 
 const drinks = [
   {
+    img: "src/assets/fruitsalad.png",
+    name: "fruitsalad",
+    plice: 6,
+    plus: "+",
+    type: "soda",
+  },
+  {
     img: "src/assets/strawberrypineapple.png",
     name: "ตื่นธรรม",
     plice: 29,
@@ -69,6 +76,48 @@ const drinks = [
     img: "src/assets/BluehawaiiPineapplestarwberry.png",
     name: "วายุภัคมนตรา",
     plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/lychee.png",
+    name: "ลิ้นจี่",
+    plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/strawberry.png",
+    name: "strawberry",
+    plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/greenapple.png",
+    name: "greenapple",
+    plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/bluehawaii.png",
+    name: "bluehawaii",
+    plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/pineapple.png",
+    name: "pineapple",
+    plice: 29,
+    plus: "+",
+    type: "soda",
+  },
+  {
+    img: "src/assets/refill.png",
+    name: "refill",
+    plice: 20,
     plus: "+",
     type: "soda",
   },

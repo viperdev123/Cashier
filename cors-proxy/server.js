@@ -11,9 +11,9 @@ const credentials = require("../JSON-For-Cashier/client_secret_34795914157-3svhe
 // Configure CORS
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://cashier-project.netlify.app",'http://localhost:5174'], // Add Netlify domain
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed HTTP methods
-    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+    origin: "*",  // WARNING: This allows all domains - less secure
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json()); // Enable JSON body parsing

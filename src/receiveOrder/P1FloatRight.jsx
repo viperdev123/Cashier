@@ -3,6 +3,8 @@ import "./P1FloatRight.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function P1FloatRight({ cart, addToCart, setCart, productType }) {
   const [orderName, setOrderName] = useState(""); // New state for order name
   const [currentOrder, setCurrentOrder] = useState(null); // New state for current order
@@ -40,8 +42,8 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
 
         if (orderEndpoint && detailEndpoint) {
           const [orderResponse, detailResponse] = await Promise.all([
-            axios.get(`http://localhost:3000${orderEndpoint}`),
-            axios.get(`http://localhost:3000${detailEndpoint}`),
+            axios.get(`${API_URL}${orderEndpoint}`),
+            axios.get(`${API_URL}${detailEndpoint}`),
           ]);
 
           const incrementedOrderID =
@@ -98,7 +100,7 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
     const sendData = async (type, orderData) => {
       try {
         const response = await axios.post(
-          `http://localhost:3000/add-order/${type}`,
+          `${API_URL}/add-order/${type}`,
           orderData
         );
         console.log(`Order added successfully to ${type} tab:`, response.data);
@@ -153,7 +155,7 @@ function P1FloatRight({ cart, addToCart, setCart, productType }) {
 
         try {
           await axios.post(
-            `http://localhost:3000/add-order-detail/${type}`,
+            `${API_URL}/add-order-detail/${type}`,
             detailData
           );
           console.log(`Detail added successfully for ${type}:`, detailData);
